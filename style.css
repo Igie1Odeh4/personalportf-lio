@@ -630,11 +630,10 @@ textarea {
   margin: auto;
 }
 
-/* Footer columns */
 .contact,
 .footer-links {
-  flex: 1;
-  min-width: 250px;
+  flex: 1 1 300px; /* 🔥 responsive */
+  
 }
 
 /* Lists */
