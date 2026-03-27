@@ -636,6 +636,8 @@ textarea {
   
 }
 
+
+
 /* Lists */
 .contact ul,
 .footer-links ul {
@@ -867,4 +869,5 @@ textarea {
     flex-direction: column;
   }
 }
+
 
