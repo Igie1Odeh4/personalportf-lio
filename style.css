@@ -846,22 +846,25 @@ textarea {
   }
 }
 
-/* ===== MOBILE FIX ===== */
+/* ===== MOBILE FIX (STRONG OVERRIDE) ===== */
 @media (max-width: 768px) {
-  .footerd {
-    flex-direction: column;
+  .footerd{
+    display: flex;
+    flex-direction: column;   /* stack vertically */
     align-items: center;
     text-align: center;
   }
 
   .contact,
   .footer-links {
-    width: 100%;
-    align-items: center; /* center content */
+    flex: none;        /* stop flex-grow */
+    width: 100%;       /* full width */
+    min-width: unset;  /* remove restriction */
   }
 
-  .contact ul,
-  .footer-links ul {
-    text-align: center;
+  .footer-links ul, .contact ul {
+    padding-top: 20px;
+    flex-direction: column;
   }
 }
+
