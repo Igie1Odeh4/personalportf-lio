@@ -678,10 +678,20 @@ textarea {
   .hero {
     flex-direction: column-reverse;
     text-align: center;
+      gap: 10px;
+      font-size: 10px;
+      padding: 2px 5%;
   }
   .hero .left, .hero .right {
     flex-basis: 100%;
+
   }
+
+  .right {
+    padding: 10px;
+
+  }
+
   .aboutme {
     flex-direction: column;
     align-items: center;
@@ -690,7 +700,7 @@ textarea {
     flex-basis: 100%;
   }
   .rightabout {
-    padding: 20px;
+    padding: 14px;
     text-align: center;
   }
   .education {
@@ -726,13 +736,13 @@ textarea {
 /* Mobile Devices */
 @media (max-width: 600px) {
   .hero .left h1 {
-    font-size: 28px;
+    font-size: 18px;
   }
   .hero .left p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .hero .left h2 {
-    font-size: 24px;
+    font-size: 15px;
   }
   .grid-pro {
     grid-template-columns: 1fr;
@@ -742,8 +752,8 @@ textarea {
 /* Small Phones */
 @media (max-width: 500px) {
   .profile__pic {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -754,49 +764,49 @@ textarea {
     right: 0;
   }
   .hero .left h1 {
-    font-size: 28px;
+    font-size: 20px;
   }
   .hero .left p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .hero .left h2 {
-    font-size: 24px;
+    font-size: 16px;
   }
   .title {
     font-size: 24px;
-    padding: 15px 30px;
+    padding: 10px 20px;
   }
   .btn a {
     font-size: 16px;
     padding: 8px 15px;
   }
   .socials a {
-    font-size: 20px;
+    font-size: 12px;
   }
   .container1 .text h2 {
-    font-size: 18px;
+    font-size: 12px;
   }
   .container1 .text p {
-    font-size: 14px;
+    font-size: 10px;
   }
   .line1 h3 {
-    font-size: 18px;
+    font-size: 10px;
   }
   .line1 img {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
   }
   .skill-container {
-    padding: 20px;
+    padding: 10px;
   }
   .skill-sub {
-    gap: 20px;
+    gap: 10px;
   }
   #skill h1 {
-    font-size: 24px;
+    font-size: 14px;
   }
   .education .acad h3 {
-    font-size: 20px;
+    font-size: 10px;
   }
   .education .acad p {
     font-size: 16px;
@@ -806,7 +816,7 @@ textarea {
     padding: 15px;
   }
   .aboutme .rightabout, .aboutme .leftabout {
-    padding: 20px;
+    padding: 5px;
   }
   .aboutme .profile__abt {
     width: 100%;
@@ -862,12 +872,25 @@ textarea {
     flex: none;        /* stop flex-grow */
     width: 100%;       /* full width */
     min-width: unset;  /* remove restriction */
+    margin: 5px 0;   /* add vertical spacing */  
   }
 
   .footer-links ul, .contact ul {
     padding-top: 20px;
     flex-direction: column;
+    gap: 10px;
+    
   }
+  .contact ul,
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li,
+.footer-links li {
+  margin: 5px 0;
+}
 }
 
 
